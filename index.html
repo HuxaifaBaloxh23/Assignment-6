@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine</title>
+    <link rel="stylesheet" href="./folder/style.css">
+</head>
+
+<body>
+
+    <!-- navbar section -->
+    <header>
+        <svg id="hamburger-menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z"
+                fill="black"></path>
+        </svg>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">About</a></li>
+                <li><a href="/">FAQ</a></li>
+                <li><a href="./folder/train.html" class="btn">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <main class="container">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-h1">Teachable Machine</h1>
+                <h2 class="hero-h2">Train a computer to recognize your<br> own images, sounds, & poses.</h2>
+
+                <p class="hero-p">A fast, easy way to create machine learning models for<br> your sites, apps, and more
+                    – no expertise or
+                    coding<br> required.</p>
+                <button class="hero-btn" onclick="window.location.href='./folder/train.html'">Get Started</button>
+                <div class="icon-holder">
+                    <a href="">
+                        <img src="./images/tensorFlow.png" alt="tensorFlow" width="22">
+                    </a>
+
+                    <a href="">
+                        <img src="./images/ml5.png" alt="ml5" width="68">
+                    </a>
+
+                    <a href="">
+                        <img src="./images/p5js.png" alt="p5js" width="68">
+                    </a>
+
+                    <a href="">
+                        <img src="./images/coral.svg" alt="coral">
+                    </a>
+
+                    <a href="">
+                        <img src="./images/arrow.svg" alt="arrow">
+                    </a>
+
+                    <a href="">
+                        <img src="./images/node.svg" alt="node">
+                    </a>
+
+
+                    <a href="">
+                        <img src="./images/aurdiono.svg" alt="aurdiono">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-video">
+                <video src="./video/prediction.mp4" loop autoplay muted></video>
+            </div>
+        </div>
+    </main>
+
+    <!--create section what is teachable  -->
+
+    <section class="container section-container">
+        <h2 class="section-h2">What is Teachable Machine?</h2>
+        <div class="section-image">
+            <img src="./images/poster.jpg" alt="">
+        </div>
+        <p class="section-p">
+            Teachable Machine is a web-based tool that makes creating machine<br> learning models fast, easy, and
+            accessible to everyone. (Note: you<br> can find the <a href="/">first version of Teachable Machine from 2017
+                here</a>.)
+        </p>
+    </section>
+
+    <!-- create section How do I use it? -->
+    <section class="container section-container">
+        <h2 class="section-h2">How do I use it?</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/collect.svg" alt="">
+                <h3 class="card-h3">
+                    <span class="card-span">1</span>
+                    Gather
+                </h3>
+                <p class="card-p">
+                    Gather and group your examples<br>
+                    into classes, or categories, that<br>
+                    you want the computer to learn.
+                </p>
+                <a href="/" class="card-a">
+                    Video: Gather samples
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>play icon</title>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5L16 12L10 7.5V16.5ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z"
+                            fill="#1967D2"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="./images/train.svg" alt="">
+                <h3 class="card-h3">
+                    <span class="card-span">2</span>
+                    Train
+                </h3>
+                <p class="card-p">
+                    Train your model, then instantly<br> test it out to see whether it can<br> correctly classify new
+                    examples.
+                </p>
+                <a href="/" class="card-a">
+                    Video: Train your model
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>play icon</title>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5L16 12L10 7.5V16.5ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z"
+                            fill="#1967D2"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="./images/export.svg" alt="">
+                <h3 class="card-h3">
+                    <span class="card-span">3</span>
+                    Export
+                </h3>
+                <p class="card-p">
+                    Export your model for your<br> projects: sites, apps, and more.<br> You can download your model
+                    or<br> host it online.
+                </p>
+                <a href="/" class="card-a">
+                    Video: Export your model
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>play icon</title>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5L16 12L10 7.5V16.5ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z"
+                            fill="#1967D2"></path>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- create section What can I use to teach it? -->
+    <section class="container section-container">
+        <h2 class="section-h2">What can I use to teach it?</h2>
+        <p class="section-p">
+            Teachable Machine is flexible – use files or capture examples live. It’s respectful of the<br>
+            way you work. You can even choose to use it entirely on-device, without any webcam<br>
+            or microphone data leaving your computer.
+        </p>
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/teach-images.png" width="300" alt="">
+                <h3 class="card-h3">
+                    Images
+                </h3>
+                <p class="card-p">
+                    Teach a model to classify images<br>
+                    using files or your webcam.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./images/teach-sounds.png" width="300" alt="">
+                <h3 class="card-h3">
+                    Sounds
+                </h3>
+                <p class="card-p">
+                    Teach a model to classify audio by<br>
+                    recording short sound samples.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./images/teach-poses.png" width="300" alt="">
+                <h3 class="card-h3">
+                    Poses
+                </h3>
+                <p class="card-p">
+                    Teach a model to classify body<br>
+                    positions using files or striking<br>
+                    poses in your webcam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- create section tutorial -->
+    <section class="container section-container">
+        <h2 class="section-h2">Tutorials</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3 class="card-h3">
+                    <a>Images: Bananameter</a>
+                </h3>
+                <p class="card-p">
+                    Learn how to create a model that<br>
+                    can tell if a banana is ripe or not.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 class="card-h3">
+                    <a>Sound: Snap Clap Whistle</a>
+                </h3>
+                <p class="card-p">
+                    Learn how to create a model that<br>
+                    detects simple sounds you make.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 class="card-h3">
+                    <a>Pose: Head Tilt</a>
+                </h3>
+                <p class="card-p">
+                    Learn how to create a model that<br>
+                    recognizes which way you’re<br>
+                    tilting your head.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- create section Made with Teachable Machine -->
+    <section class="container section-container">
+        <h2 class="section-h2">Made with Teachable Machine</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/sorter.jpg" style="border-radius: 8px;" width="300" alt="">
+                <h3 class="card-h3">
+                    Tiny Sorter
+                </h3>
+                <p class="card-p">
+                    A DIY experiment connecting<br>
+                    Arduino and Teachable Machine.
+                </p>
+                <a href="/" class="card-a">
+                    Learn more
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="./images/euphonia.jpg" style="border-radius: 8px;" width="300" alt="">
+                <h3 class="card-h3">
+                    Project Euphonia
+                </h3>
+                <p class="card-p">
+                    Steve Saling is using Teachable<br> Machine to communicate in new<br> ways, such as using facial<br>
+                    gestures to trigger sounds.
+                </p>
+                <a href="/" class="card-a">
+                    Watch video
+                </a>
+            </div>
+
+
+            <div class="card">
+                <img src="./images/snake.jpg" style="border-radius: 8px;" width="300" alt="">
+                <h3 class="card-h3">
+                    Teachable Snake
+                </h3>
+                <p class="card-p">
+                    Vince MingPu Shao used<br>
+                    Teachable Machine to turn their<br> webcam and a piece of paper into<br> a game controller.
+                </p>
+                <a href="/" class="card-a">
+                    Learn more
+                </a>
+            </div>
+
+
+        </div>
+
+        <p class="section-p">
+            Check out more experiments made with Teachable Machine here. If you've made<br>
+            something you want to share with us, submit it here or just email teachablemachine-<br>
+            support@google.com.
+        </p>
+    </section>
+
+    <!-- create section Works with… -->
+    <section class="container section-container">
+        <h2 class="section-h2">Works with…</h2>
+        <div class="icon-holder-1">
+            <a href="">
+                <img src="./images/tensorFlow.png" alt="tensorFlow" width="22">
+            </a>
+
+            <a href="">
+                <img src="./images/ml5.png" alt="ml5" width="68">
+            </a>
+
+            <a href="">
+                <img src="./images/p5js.png" alt="p5js" width="68">
+            </a>
+
+            <a href="">
+                <img src="./images/coral.svg" alt="coral">
+            </a>
+
+            <a href="">
+                <img src="./images/arrow.svg" alt="arrow">
+            </a>
+
+            <a href="">
+                <img src="./images/node.svg" alt="node">
+            </a>
+
+
+            <a href="">
+                <img src="./images/aurdiono.svg" alt="aurdiono">
+            </a>
+        </div>
+        <p class="section-p">
+            The models you make with Teachable Machine are<br>
+            real TensorFlow.js models that work anywhere<br>
+            javascript runs, so they play nice with tools like<br>
+            Glitch, P5.js, Node.js & more.<br><br>
+            Plus, export to different formats to use your models<br>
+            elsewhere, like Coral, Arduino & more.
+        </p>
+        <div style="text-align: center;">
+            <a href="/" class="card-a">
+                FAQ: Saving & Exporting
+            </a>
+        </div>
+    </section>
+
+    <!-- create section first version from 2017? -->
+    <section class="container section-container">
+        <h2 class="section-h2">Looking for the first version from<br>2017?</h2>
+        <div style="text-align: center;">
+            <img src="./images/2017-version.jpg" class="img-2017" alt="">
+        </div>
+        <div style="text-align: center;">
+            <a href="/" class="card-a">
+                Open site
+            </a>
+        </div>
+    </section>
+
+    <!-- create section More questions? -->
+    <section class="container section-container">
+        <h2 class="section-h2">More questions?</h2>
+        <div style="text-align: center;">
+            <a href="/" class="card-a">
+                Check our FAQ.
+            </a>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <img src="./images/ai.svg" width="130" alt="">
+        <a href="">Privacys & Terms</a>
+        <img src="./images/google.svg" width="110" alt="">
+    </footer>
+
+
+</body>
+
+</html>
